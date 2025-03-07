@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Kalepu Anjani Bhargav Kumar, a Web Developer, Photo Editor, and Video Editor.">
+    <meta name="keywords" content="Web Developer, Photo Editor, Video Editor, Portfolio, Projects, Services">
+    <meta name="author" content="Kalepu Anjani Bhargav Kumar">
+    <title>Kalepu Anjani Bhargav Kumar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta property="og:title" content="Kalepu Anjani Bhargav Kumar's Portfolio">
+    <meta property="og:description" content="Web Developer, Photo Editor, and Video Editor Portfolio">
+    <meta property="og:image" content="https://path_to_image.jpg">
+    <meta property="og:url" content="https://www.example.com">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header id="header" aria-label="Website Header">
+        <div class="container">
+            <nav>
+                <h1 id="heading" aria-label="Website Title">Kalepu Anjani Bhargav Kumar</h1>
+                <ul id="sidemenu" role="navigation" aria-labelledby="heading">
+                    <li><a href="#header" aria-label="Go to Home Section">Home</a></li>
+                    <li><a href="#about" aria-label="Go to About Section">About</a></li>
+                    <li><a href="#services" aria-label="Go to Services Section">Services</a></li>
+                    <li><a href="#projects" aria-label="Go to Projects Section">Projects</a></li>
+                    <li><a href="#contact" aria-label="Go to Contact Section">Contact</a></li>
+                    <li><button class="close-menu" onclick="closemenu()" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button></li>
+                </ul>
+                <button class="open-menu" onclick="openmenu()" aria-label="Open Navigation Menu"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Kalepu Anjani Bhargav Kumar</span><br>From Mandapeta</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" aria-labelledby="about-heading">
+        <div class="container">
+            <h2 class="sub-title" id="about-heading">About Me</h2>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://ik.imagekit.io/1abk1k23/IMG_20231227_125754.jpg?updatedAt=1735926523424" alt="Kalepu Anjani Bhargav Kumar's portrait" loading="lazy">
+                </div>
+                <div class="about-col-2">
+                    <p>I am Kalepu Anjani Bhargav Kumar, currently pursuing a BTech in Electronics and Communication Engineering. I am passionate about web development and digital media editing.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing UI and functionality of websites</li>
+                            <li><span>Photo Editing</span><br>Enhancing images using Photoshop and mobile apps</li>
+                            <li><span>Video Editing</span><br>Editing videos with Premiere Pro and other tools</li>
+                            <li><span>Poster Design</span><br>Creating engaging event posters</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>To Do List</span><br>A task management web app to stay organized.</li>
+                            <li><span>JS Calculator</span><br>Performing basic arithmetic operations on the web.</li>
+                            <li><span>Wikipedia Clone</span><br>An informative platform for knowledge sharing.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>Studying at Pragati Engineering College</li>
+                            <li><span>2019 - 2021</span><br>Intermediate at Sasi Junior College | 95%</li>
+                            <li><span>2019</span><br>10th Grade at Bhashyam High School | CGPA: 9.7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="sub-title">Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Design and development of web applications using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-image"></i>
+                    <h3>Photo Editing</h3>
+                    <p>Editing photos with advanced techniques in Adobe Photoshop and mobile apps.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Video Editing</h3>
+                    <p>Creating dynamic and professional videos using Adobe Premiere Pro and mobile apps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="sub-title">Projects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://ik.imagekit.io/krishnasai/To%20Do%20List.png?updatedAt=1713261784474" alt="To Do List Project" loading="lazy">
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p>Manage your tasks effectively with this simple to-do list app.</p>
+                        <a target="_blank" href="https://krishnasaitodolist.netlify.app/" aria-label="View To Do List Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://ik.imagekit.io/krishnasai/Calculator.webp?updatedAt=1713261784587" alt="JS Calculator Project" loading="lazy">
+                    <div class="layer">
+                        <h3>JS Calculator</h3>
+                        <p>A simple calculator that performs arithmetic calculations in the browser.</p>
+                        <a target="_blank" href="https://krishnajscalculator.netlify.app/" aria-label="View JS Calculator Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://ik.imagekit.io/krishnasai/Wikipedia.jpg?updatedAt=1713261784369" alt="Wikipedia Project" loading="lazy">
+                    <div class="layer">
+                        <h3>Wikipedia Clone</h3>
+                        <p>Learn from the world's largest online encyclopedia, Wikipedia.</p>
+                        <a target="_blank" href="https://krishnawikipedia.netlify.app/" aria-label="View Wikipedia Clone Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope"></i> anjanibhargav23@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7729017104</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.linkedin.com/in/anjani-bhargav-kumar-kalepu-26b773243/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/bhargavkumar2304"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a target="_blank" href="https://drive.google.com/file/d/1sVEk-w46gkakXT8pWXknUNQQaiFRc8eD/view?usp=drive_link" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a class="gotopbtn" href="#header" aria-label="Go to Top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjiFNWyG0rKz0BJRNmITTLXVkX8AevRZwftl9kBWLrXk7OEmSYUhE7eQo4gLsvZGCc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
