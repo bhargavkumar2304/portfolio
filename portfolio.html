@@ -1,184 +1,529 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Kalepu Anjani Bhargav Kumar, a Web Developer, Photo Editor, and Video Editor.">
-    <meta name="keywords" content="Web Developer, Photo Editor, Video Editor, Portfolio, Projects, Services">
-    <meta name="author" content="Kalepu Anjani Bhargav Kumar">
-    <title>Kalepu Anjani Bhargav Kumar's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta property="og:title" content="Kalepu Anjani Bhargav Kumar's Portfolio">
-    <meta property="og:description" content="Web Developer, Photo Editor, and Video Editor Portfolio">
-    <meta property="og:image" content="https://path_to_image.jpg">
-    <meta property="og:url" content="https://www.example.com">
-    <meta name="twitter:card" content="summary_large_image">
-</head>
-<body>
-    <header id="header" aria-label="Website Header">
-        <div class="container">
-            <nav>
-                <h1 id="heading" aria-label="Website Title">Kalepu Anjani Bhargav Kumar</h1>
-                <ul id="sidemenu" role="navigation" aria-labelledby="heading">
-                    <li><a href="#header" aria-label="Go to Home Section">Home</a></li>
-                    <li><a href="#about" aria-label="Go to About Section">About</a></li>
-                    <li><a href="#services" aria-label="Go to Services Section">Services</a></li>
-                    <li><a href="#projects" aria-label="Go to Projects Section">Projects</a></li>
-                    <li><a href="#contact" aria-label="Go to Contact Section">Contact</a></li>
-                    <li><button class="close-menu" onclick="closemenu()" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button></li>
-                </ul>
-                <button class="open-menu" onclick="openmenu()" aria-label="Open Navigation Menu"><i class="fa-solid fa-bars"></i></button>
-            </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Kalepu Anjani Bhargav Kumar</span><br>From Mandapeta</h1>
-            </div>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Ram Maheshwari | RammCodes | Frontend Web Developer</title>
+    <meta
+      name="description"
+      content="A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product"
+    />
+    <meta name="author" content="Ram Maheshwari" />
+    <meta
+      name="google-site-verification"
+      content="wX2xdkxqjrC4rA2EM-9bbaVpiEEFG8ae5azgeZDd-oo"
+    />
 
-    <section id="about" aria-labelledby="about-heading">
-        <div class="container">
-            <h2 class="sub-title" id="about-heading">About Me</h2>
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="https://ik.imagekit.io/1abk1k23/IMG_20231227_125754.jpg?updatedAt=1735926523424" alt="Kalepu Anjani Bhargav Kumar's portrait" loading="lazy">
-                </div>
-                <div class="about-col-2">
-                    <p>I am Kalepu Anjani Bhargav Kumar, currently pursuing a BTech in Electronics and Communication Engineering. I am passionate about web development and digital media editing.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>Web Development</span><br>Designing UI and functionality of websites</li>
-                            <li><span>Photo Editing</span><br>Enhancing images using Photoshop and mobile apps</li>
-                            <li><span>Video Editing</span><br>Editing videos with Premiere Pro and other tools</li>
-                            <li><span>Poster Design</span><br>Creating engaging event posters</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Projects">
-                        <ul>
-                            <li><span>To Do List</span><br>A task management web app to stay organized.</li>
-                            <li><span>JS Calculator</span><br>Performing basic arithmetic operations on the web.</li>
-                            <li><span>Wikipedia Clone</span><br>An informative platform for knowledge sharing.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>2021 - Present</span><br>Studying at Pragati Engineering College</li>
-                            <li><span>2019 - 2021</span><br>Intermediate at Sasi Junior College | 95%</li>
-                            <li><span>2019</span><br>10th Grade at Bhashyam High School | CGPA: 9.7</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <meta
+      property="og:title"
+      content="Ram Maheshwari | RammCodes | Frontend Web Developer"
+    />
+    <meta property="og:site_name" content="Ram Maheshwari Portfolio Website" />
+    <meta property="og:url" content="https://www.rammaheshwari.com/" />
+    <meta
+      property="og:description"
+      content="A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/C8Wnkrt/pretty-snap-2022-3-29-16-11.png"
+    />
 
-    <section id="services">
-        <div class="container">
-            <h2 class="sub-title">Services</h2>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Design and development of web applications using HTML, CSS, and JavaScript.</p>
-                </div>
-                <div>
-                    <i class="fa-regular fa-image"></i>
-                    <h3>Photo Editing</h3>
-                    <p>Editing photos with advanced techniques in Adobe Photoshop and mobile apps.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-video"></i>
-                    <h3>Video Editing</h3>
-                    <p>Creating dynamic and professional videos using Adobe Premiere Pro and mobile apps.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <link rel="stylesheet" href="css/style.css" />
 
-    <section id="projects">
-        <div class="container">
-            <h2 class="sub-title">Projects</h2>
-            <div class="work-list">
-                <div class="work">
-                    <img src="https://ik.imagekit.io/krishnasai/To%20Do%20List.png?updatedAt=1713261784474" alt="To Do List Project" loading="lazy">
-                    <div class="layer">
-                        <h3>To Do List</h3>
-                        <p>Manage your tasks effectively with this simple to-do list app.</p>
-                        <a target="_blank" href="https://krishnasaitodolist.netlify.app/" aria-label="View To Do List Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://ik.imagekit.io/krishnasai/Calculator.webp?updatedAt=1713261784587" alt="JS Calculator Project" loading="lazy">
-                    <div class="layer">
-                        <h3>JS Calculator</h3>
-                        <p>A simple calculator that performs arithmetic calculations in the browser.</p>
-                        <a target="_blank" href="https://krishnajscalculator.netlify.app/" aria-label="View JS Calculator Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://ik.imagekit.io/krishnasai/Wikipedia.jpg?updatedAt=1713261784369" alt="Wikipedia Project" loading="lazy">
-                    <div class="layer">
-                        <h3>Wikipedia Clone</h3>
-                        <p>Learn from the world's largest online encyclopedia, Wikipedia.</p>
-                        <a target="_blank" href="https://krishnawikipedia.netlify.app/" aria-label="View Wikipedia Clone Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h2 class="sub-title">Contact Me</h2>
-                    <p><i class="fa-solid fa-envelope"></i> anjanibhargav23@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 7729017104</p>
-                    <div class="social-icons">
-                        <a target="_blank" href="https://www.linkedin.com/in/anjani-bhargav-kumar-kalepu-26b773243/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="https://github.com/bhargavkumar2304"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a target="_blank" href="https://drive.google.com/file/d/1sVEk-w46gkakXT8pWXknUNQQaiFRc8eD/view?usp=drive_link" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet" method="POST">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <a class="gotopbtn" href="#header" aria-label="Go to Top"><i class="fa-solid fa-arrow-up"></i></a>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QD9ESD1D9K"
+    ></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjiFNWyG0rKz0BJRNmITTLXVkX8AevRZwftl9kBWLrXk7OEmSYUhE7eQo4gLsvZGCc/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message Sent Successfully"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QD9ESD1D9K");
     </script>
-</body>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="https://i.postimg.cc/TwY74D31/profile-pic-8.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Ram Maheshwari</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link"> Projects </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm Ram Maheshwari</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            A Result-Oriented Web Developer building and managing Websites and
+            Web Applications that leads to the success of the overall product
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://linkedin.com/in/rammcodes"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/linkedin-dark.svg"
+              alt="Ram Maheshwari Linkedin Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://twitter.com/rammcodes"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/twitter-dark.svg"
+              alt="RammCodes Twitter Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/yt-dark.svg"
+              alt="RammCodes Youtube Channel"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://github.com/rammcodes"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/github-dark.svg"
+              alt="RammCodes Github Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+
+        <div class="home-hero__social">
+          <a
+            href="https://dev.to/rammcodes"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/book-dark.svg"
+              alt="RammCodes DEV.to Blog Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Here you will find more information about me, what I do, and my
+            current skills mostly in terms of programming and technology
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                I'm a <strong>Frontend Focused Web Developer</strong> building
+                and managing the Front-end of Websites and Web Applications that
+                leads to the success of the overall product. Check out some of
+                my work in the <strong>Projects</strong> section.
+              </p>
+              <p class="about__content-details-para">
+                I also like sharing content related to the stuff that I have
+                learned over the years in <strong>Web Development</strong> so it
+                can help other people of the Dev Community. Feel free to Connect
+                or Follow me on my
+                <a
+                  rel="noreferrer"
+                  href="https://linkedin.com/in/rammcodes"
+                  target="_blank"
+                  >Linkedin</a
+                >
+                and
+                <a
+                  rel="noreferrer"
+                  href="https://instagram.com/rammcodes_"
+                  target="_blank"
+                  >Instagram</a
+                >
+                where I post useful content related to Web Development and
+                Programming
+              </p>
+              <p class="about__content-details-para">
+                I'm open to <strong>Job</strong> opportunities where I can
+                contribute, learn and grow. If you have a good opportunity that
+                matches my skills and experience then don't hesitate to
+                <strong>contact</strong> me.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Wordpress</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Github</div>
+              <div class="skills__skill">Responsive Design</div>
+              <div class="skills__skill">SEO</div>
+              <div class="skills__skill">Terminal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Here you will find some of the personal and clients projects that I
+            created with each project containing its own case study
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/dopefolio.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Dopefolio</h3>
+              <p class="projects__row-content-desc">
+                Dopefolio is a successful Open-Source project that I created
+                which have been featured on some of the biggest tech sites like
+                CSS-Tricks, Hostinger, etc & used by thousands of developers
+                globally
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-1' target='_blank'>Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/wilsonport.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Wilsonport</h3>
+              <p class="projects__row-content-desc">
+                Wilsonport is a multiservice logistics and transport company and
+                I created their website from scratch using the frontend tools I
+                know.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-2' target='_blank'>Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/boreal-coffee-clone.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Boreal Coffee Clone</h3>
+              <p class="projects__row-content-desc">
+                I re-created the frontend of Boreal Coffee's official web app
+                because I got attracted to their beautiful UI. It was a great
+                experience for me to build the entire frontend.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-3' target='_blank'>Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/crown-template.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Crown Template</h3>
+              <p class="projects__row-content-desc">
+                Crown is a web template that I created targeting the restaurant
+                and food industry which anyone can use to present their business
+                online.
+              </p>
+              <a class='btn btn--med btn--theme dynamicBgClr' href='/project-4' target='_blank'>Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Feel free to Contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action='#' class='contact__form' method='post'><input type='hidden' name='form-name' value='form 1' />
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="email"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://linkedin.com/in/rammcodes"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="Ram Maheshwari Linkedin Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/rammcodes"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="RammCodes Github Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/rammcodes"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="RammCodes Twitter Profile"
+                />
+              </a>
+
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://dev.to/rammcodes"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/blog-ico.png"
+                  alt="RammCodes DEV.to Blog Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg"
+              >
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/yt-ico.png"
+                  alt="RammCodes Youtube Channel"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">Ram Maheshwari</h2>
+            <p class="main-footer__short-desc">
+              A Frontend focused Web Developer building the Frontend of Websites
+              and Web Applications that leads to the success of the overall
+              product
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script
+      src="//code.tidio.co/hkirvl5pqs5cjjawh11xutnzjgtg9tfi.js"
+      async
+    ></script>
+  </body>
 </html>
